@@ -1,0 +1,10 @@
+<h1>Welcome to Mini Facebook</h1>
+<p>This is a simple social networking site</p>
+
+<br/>
+<p>We have the following users:</p>
+<ul>
+  <% @users.each do |u| %>
+  <li><%= u.name %></li>
+  <% end %>
+</ul>
