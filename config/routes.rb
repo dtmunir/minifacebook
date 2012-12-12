@@ -1,9 +1,22 @@
 Minifacebook::Application.routes.draw do
+
+
+
+  
+
+  get "users/sign_up"
+
+  get "users/sign_in"
+
+  get "users/sign_out"
+
   get "home/index"
 
   get "home/about"
 
   get "home/help"
+
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
